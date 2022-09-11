@@ -54,11 +54,12 @@ keys.addEventListener('click', event => {
      } else {
       result = firstNumber / secondNumber
      }
-     display.innerHTML = result
+
+     display.innerHTML = result.toFixed(2)
     // console.log(firstNumber, operator, secondNumber)
     }
 
   if (key.dataset.type === 'clear') {
-
+     display.innerHTML = 0;
   }
 })

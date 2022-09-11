@@ -2,21 +2,23 @@
   width: 390px;
   margin: 0 auto;
   text-align: center;
+  margin-top: 200px;
 }
 h1 {
   color: white;
 }
 .calculator_display {
   color: white;
-  font-size: 20px;
+  font-size: 35px;
   display: flex;
   flex-direction: row-reverse;
-  width: 150px;
+  width: 280px;
   margin: auto
 }
 .calculator_keys {
   margin: auto;
-  width: 200px;
+  width: 300px;
+  height: 200px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -25,7 +27,7 @@ h1 {
 }
 .equal {
   grid-column: 4;
-  grid-row: 3 / 7;
+  grid-row: 3 / 6;
 }
 button {
   border-radius: 15px;
