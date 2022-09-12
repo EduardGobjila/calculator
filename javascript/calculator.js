@@ -5,7 +5,7 @@ const number = document.getElementsByClassName('number');
 let display = document.getElementsByClassName('calculator_display')[0];
 const clear = document.getElementsByClassName('clear')
 
-// console.log(keys)
+console.log(keys)
 
 keys.addEventListener('click', event => {
   let key = event.target;
