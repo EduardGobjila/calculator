@@ -17,8 +17,8 @@ h1 {
 }
 .calculator_keys {
   margin: auto;
-  width: 300px;
-  height: 200px;
+  width: 340px;
+  height: 300px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
@@ -33,6 +33,7 @@ button {
   border-radius: 15px;
   background-color: rgb(0, 143, 138);
   margin: 2px;
+  border: none;
   color: orange;
 }
 .number,
