@@ -57,9 +57,11 @@ keys.addEventListener('click', event => {
 
      display.innerHTML = result.toFixed(2)
     // console.log(firstNumber, operator, secondNumber)
-    }
 
-  if (key.dataset.type === 'clear') {
-     display.innerHTML = 0;
   }
+    if (key.dataset.type === 'clear') {
+    display.innerHTML = 0;
+    calculator.firstNumber = 0;
+    calculator.previousKeyType = '';
+ }
 })
