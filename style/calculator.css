@@ -31,10 +31,9 @@ h1 {
 }
 button {
   border-radius: 15px;
-  border: 1px solid aqua;
   background-color: rgb(0, 143, 138);
   margin: 2px;
-
+  color: orange;
 }
 .number,
 .equal,
@@ -47,11 +46,11 @@ button {
  background-color: aqua;
 }
 .selected {
-  background-color: rgb(12, 95, 95);
+  background-color: rgb(95, 161, 161);
 }
 
 :root {
-  background-color: black;
+  background-color: rgb(27, 26, 26);
 }
 
 
