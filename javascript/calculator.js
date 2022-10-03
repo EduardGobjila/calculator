@@ -7,6 +7,8 @@ const clear = document.getElementsByClassName('clear')
 
 // console.log(keys)
 
+// adding event listeners on click for the keys and also targeting the
+// key value and display value
 keys.addEventListener('click', event => {
   let key = event.target;
   const keyValue = key.innerHTML
@@ -25,7 +27,7 @@ keys.addEventListener('click', event => {
     calculator.previousKeyType = 'number';
   }
 
-
+// is this a operator
   if (key.dataset.type === 'operator') {
 
     let operatorKeys = keys.querySelectorAll('[data-type="operator"]')
@@ -38,6 +40,7 @@ keys.addEventListener('click', event => {
     calculator.firstNumber = displayValue
   }
 
+  // is this a equal key
   if (key.dataset.type === 'equal') {
     const secondNumber = parseInt(displayValue)
     const operator = calculator.operator
@@ -59,6 +62,7 @@ keys.addEventListener('click', event => {
     // console.log(firstNumber, operator, secondNumber)
     }
 
+    // is this the c key
   if (key.dataset.type === 'clear') {
      display.innerHTML = 0;
   }
